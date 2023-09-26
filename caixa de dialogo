@@ -37,7 +37,7 @@ public class DialogueSystem : MonoBehaviour
             else
             {
                 // se vc estiver perto do personagem e clicar no espaco e o dialogo estiver fechado ira abrir
-                OpenDialogue(currentDialogue); // Passe o conjunto de diálogos do NPC atual.
+                OpenDialogue(currentDialogue); // avance o conjunto de diálogos do npc atual
             }
         }
     }
