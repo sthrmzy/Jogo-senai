@@ -1,0 +1,117 @@
+@font-face {
+    font-family:'MeuTexto';  /* Dê um nome à sua fonte */
+    src: url('font1.ttf') format('truetype');
+    /* Adicione outros formatos de fonte, se necessário, como woff, woff2, etc. */
+}
+
+@font-face {
+    font-family:'MeuTexto2';  /* Dê um nome à sua fonte */
+    src: url('font2.ttf') format('truetype');
+    /* Adicione outros formatos de fonte, se necessário, como woff, woff2, etc. */
+}
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #54658f;
+}
+
+.título{
+    height:20vh;
+    animation: floatAnimation 2s ease-in-out infinite;
+}
+
+@keyframes floatAnimation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+header {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header h1 {
+    margin-top: 30px;
+}
+
+header h1 img.título {
+    height: 20vh;
+    animation: floatAnimation 2s ease-in-out infinite;
+}
+
+header nav{
+    margin-top: 30px; 
+}
+
+/* Adicione estas regras CSS para estilizar os botões das categorias */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    font-family:'MeuTexto2', sans-serif;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    border-radius: 0; /* Ajuste este valor para alterar o arredondamento das bordas */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #333;
+    color: #fff;
+    transform: scale(1.1); /* Ajuste este valor para alterar o nível de escala da animação */
+}
+
+
+section {
+    text-align: center;
+    padding: 20px;
+}
+
+#game-container {
+    text-align: center;
+    width: 50%; /* Ou defina um tamanho específico */
+    height: 70%; /* Ou defina uma altura específica */
+    margin: 20px auto; /* Margens para espaçamento ao redor do contêiner */
+    background-color: #f0f0f0; /* Cor de fundo para destacar o contêiner */
+}
+
+footer {
+    font-family: 'MeuTexto', sans-serif;
+    text-align: center;
+    margin-top: auto;
+    padding: 10px;
+    background-color: #285073;
+    width: 100%;
+}
+
+footer p{
+    color: azure;
+
+}
