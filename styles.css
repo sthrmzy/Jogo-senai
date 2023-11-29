@@ -23,8 +23,10 @@ body {
 }
 
 .título{
-    height:20vh;
+    margin-top: 800px;
+    height: 100px;
     animation: floatAnimation 2s ease-in-out infinite;
+
 }
 
 @keyframes floatAnimation {
@@ -90,17 +92,67 @@ nav a:hover {
 
 
 section {
+    text-align: left;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'MeuTexto', sans-serif;
+}
+
+section h2 {
     text-align: center;
+    
+}
+
+p1 {
+    max-width: 600px; 
     padding: 20px;
 }
 
+#inicio{
+    background-color: white; 
+    width: 100vw; 
+    margin: 0; 
+    box-sizing: border-box; 
+    flex-direction: row; /* Altera a direção para linha */
+    justify-content: space-between;
+    align-items: flex-start; /* Alinha os itens ao início (borda superior) */
+}
+
+#inicio img {
+    max-width: 300px;
+
+}
+
+
+
 #game-container {
     text-align: center;
-    width: 50%; /* Ou defina um tamanho específico */
-    height: 70%; /* Ou defina uma altura específica */
-    margin: 20px auto; /* Margens para espaçamento ao redor do contêiner */
-    background-color: #f0f0f0; /* Cor de fundo para destacar o contêiner */
+    width: 50%; 
+    height: 70%; 
+    margin: 20px auto; 
+    background-color: #f0f0f0; 
 }
+
+#pato{
+    position:static;
+    bottom: 0;
+    left: 0;
+    width: 50px; /* Ajuste conforme necessário */
+    height: auto;
+    animation: andarPato 30s linear infinite; 
+}
+
+@keyframes andarPato {
+    0%, 100% {
+        transform: translateX(0) scaleX(1);
+    }
+    50% {
+        transform: translateX(50vw) scaleX(1);
+    }
+}
+
 
 footer {
     font-family: 'MeuTexto', sans-serif;
